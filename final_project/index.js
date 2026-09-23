@@ -37,6 +37,8 @@ app.use("/customer/auth/*", function auth(req, res, next) {
 const PORT = 8800;
 
 app.use("/customer", customer_routes);
+// app.use("/", genl_routes);
+
 app.use("/", genl_routes);
 
 app.listen(PORT,()=>console.log("Server is running"));
